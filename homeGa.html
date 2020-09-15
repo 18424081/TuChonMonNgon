@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thịt Gà</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark" style="display: flex; padding: 0;">
+		<button class="navbar-toggler homeButton" type="button" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;" onclick="location.href='home.html'">
+			<i class="fas fa-home"></i><b> Trang chủ</b>
+		</button>
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#HaiSan" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fa"></i><b> Hải Sản</b>
+		</button>
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#Thit" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fa" aria-hidden="true"></i><b> Thịt</b>
+		</button>
+
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#RauCu" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fa" aria-hidden="true"></i><b> Rau Củ</b>
+		</button>
+
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#TraiCay" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fa" aria-hidden="true"></i><b> Trái Cây</b>
+		</button>
+
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#GiaVi" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fa" aria-hidden="true"></i><b> Gia Vị</b>
+		</button>
+
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#User" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fas fa-user" aria-hidden="true"></i><b> Người Dùng</b>
+		</button>
+
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#Cast" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fas fa-shopping-basket" aria-hidden="true" onclick="location.href='giohang.html'"></i><b onclick="location.href='giohang2.html'"> Giỏ Hàng</b>
+		</button>
+	</nav>
+	<div id="ThucPham">
+		<div class="collapse navbar-collapse"  id="HaiSan" data-parent="#ThucPham">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse bg-success" id="Thit" data-parent="#ThucPham">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="homeHeo.html">Thịt Heo</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="homeGa.html">Thịt Gà</a>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse bg-success" id="RauCu" data-parent="#ThucPham">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse bg-success" id="TraiCay" data-parent="#ThucPham">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse bg-success" id="GiaVi" data-parent="#ThucPham">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		
+	<div class="container-fluid" style="margin-top: 5%; height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-md-2" style="position: relative;">
+				<div id="recommentSidenav" class="sidenav" style="overflow-y: hidden;">
+					<div class="slideNavTitle">
+						<b>Món Gợi Ý</b>
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNavHori('recommentSidenav');"><b>X</b></a>
+					</div>
+					
+					<div class="scrollmenu" style="background-color: #e6e6e6;">
+						<div class="card" style="margin: 25px 15px 70px 15px;">
+							<img class="card-img-top" src="comga.jpg" style="width: 100%; height: 170px;">
+							<div class="card-body">
+								<h5 class="card-title"><center>Cơm Gà Tam Kỳ</center></h5>
+								<center><button type="button" class="btn btn-info" style="width: 100%;" onclick="openNavHori('chooseSidenav')">Chọn</button></center>
+							</div>
+						</div>
+						<div class="card" style="margin: 0px 15px 100px 15px;">
+							<img class="card-img-top" src="#" style="width: 100%; height: 170px;">
+							<div class="card-body">
+								<h5 class="card-title"><center>Cà Ri Gà</center></h5>
+								<center><button type="button" class="btn btn-info" style="width: 100%;">Chọn</button></center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8" style="position: relative;">
+				<div id="chooseSidenav" class="overlay">
+					<div class="overlay-content" style="height: 100%; width: 100%;">
+						<div style="width: 100%; font-size: 25px; background-color: #5f5f5f; padding: 10px 0;">
+							<center>Hướng dẫn nấu món cơm gà Tam Kỳ</center>
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNavHori('chooseSidenav')"><b>X</b></a>
+						</div>
+						<div style="border: 1px solid black;"></div>
+						<div style="overflow: auto; background-color: #e6e6e6; height: 100%;" >
+							<div style="color: black; margin-top: 2.5px; padding-top: 2%;">
+								<center>Chọn số người ăn: <input type="number" min="1" max="20" style="border-radius: 15px; margin-bottom: 2%; outline: none; text-align: center;" value="4"></center>
+								<div style="border: 1px solid black; width: 70%; margin: 0 auto; border-radius: 10px;">
+									<table style="width: 100%; background-color: white; border-radius: 10px;">
+										<tr>
+											<th>Nguyên Liệu</th>
+											<th colspan="2"></th>
+										</tr>
+										<tr>
+											<td>Gạo Tám thơm</td>
+											<td><input type="number" min="0" max="1000" style="text-align: center;" value="500"></td>
+											<td><input type="checkbox" style="width: 20px; height: 20px;" checked="true"></td>
+										</tr>
+										<tr>
+											<td>Hành tây (củ)</td>
+											<td><input type="number" min="0" max="1000" style="text-align: center;" value="1"></td>
+											<td><input type="checkbox" style="width: 20px; height: 20px;" checked="true"></td>
+										</tr>
+										<tr>
+											<td>Chanh (quả)</td>
+											<td><input type="number" min="0" max="1000" style="text-align: center;" value="3"></td>
+											<td><input type="checkbox" style="width: 20px; height: 20px;" checked="true"></td>
+										</tr>
+										<tr>
+											<td>Ớt (gram)</td>
+											<td><input type="number" min="0" max="1000" style="text-align: center;" value="50"></td>
+											<td><input type="checkbox" style="width: 20px; height: 20px;" checked="true"></td>
+										</tr>
+										<tr>
+											<td>Tỏi (củ)</td>
+											<td><input type="number" min="0" max="1000" style="text-align: center;" value="0.5"></td>
+											<td><input type="checkbox" style="width: 20px; height: 20px;" checked="true"></td>
+										</tr>
+										<tr>
+											<td>Rau răm (gram)</td>
+											<td><input type="number" min="0" max="1000" style="text-align: center;" value="100" ></td>
+											<td><input type="checkbox" style="width: 20px; height: 20px;"  checked="true"></td>
+										</tr>
+										<tr>
+											<td>Đùi gà Góc Tư (cái)</td>
+											<td><input type="number" min="0" max="1000" style="text-align: center;" value="4" ></td>
+											<td><input type="checkbox" style="width: 20px; height: 20px;" checked="true" disabled="true"></td>
+										</tr>
+										<tr>
+											<td colspan="3"></td>
+										</tr>
+										<tr>
+											<td colspan="3">
+												<center><button type="button" class="btn btn-primary" onclick="alert('Đã thêm vào giỏ hàng')">Thêm vào giỏ hàng</button></center>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="3"></td>
+										</tr>	
+									</table>
+								</div>
+							</div>
+							<div style="color: black; padding-top: 5%; margin-left: 5%; padding-bottom: 100px;">
+								<h6 style="display: inline;">Bước 1: </h6><span>
+									Gà rửa sạch, hành lá và gừng bó lại nhét vào bụng gà. Cho nước, bột nghệ, muối, đường và gà vào nồi, bắc lên bếp luộc gà với lửa vừa.
+									Khi gà chín thì vớt gà ra.
+								</span>
+								<br>
+								<h6 style="display: inline;">Bước 2: </h6><span>
+									Gạo (tùy ăn nhiều hay ít) vo sạch, nấu với nước luộc gà (cách nấu giống bình thường hàng ngày bạn nấu cơm). Muốn cơm có màu vàng hơn thì cho thêm chút bột
+								</span>
+								<br>
+								<h6 style="display: inline;">Bước 3: </h6><span>
+									Hành tây thái mỏng, ngâm với dấm và đường 30 phút cho hành hết hăng.
+								</span>
+								<br>
+								<h6 style="display: inline;">Bước 4: </h6><span>
+									Gà luộc xé hơi nhỏ, cho vào âu cùng với rau thơm, rau răm, hành tây. Sau đó cho chén nước mắm vào trộn đều. Nêm nếm lại cho vừa ăn.
+Nén cơm vào bát rồi úp ra đĩa. Thịt gà trộn cho cho một bên đĩa, cạnh cơm rồi rắc thêm chút hành phi, trang trí dưa chuột, xà lách cho đẹp.
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+
+				<div class="input-group" style="border: 1px solid black; border-radius: 10px; margin-bottom: 2%; height: 40px">
+					<div class="input-group-prepend" style="display: flex;">
+						<span class="input-group-text fas fa-search" style="background-color: white; border-radius: 10px; border: none;margin-top: 5px;"></span>
+					</div>
+					<input type="text" id="search" placeholder="Search..." style="flex-grow: 1; border: none; border-radius: 10px;">
+				</div>
+				<div id="product-list" class="carousel slide" data-ride="carousel" data-interval="false" style="height: 100%;">
+					<div class="carousel-inner" style="height: 100%;">
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product">
+									<img src="dui_ga.jpg" onclick="openNavVer('detailSidenav')">
+									<center>Đùi Gà Góc Tư</center>
+									<center>15.000 VND</center>
+									<div class="btn-group" style="width: 100%;">
+										<button type="button" class="btn btn-outline-success" onclick="openNavHori('recommentSidenav')">+</button>
+										<button type="button" class="btn btn-outline-danger"><i class="fas fa-shopping-cart"></i></button>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="detailSidenav" class="overlay-2">
+					<div class="overlay-content" style="height: 100%; width: 100%;">
+						<div style="width: 100%; font-size: 25px; background-color: #5f5f5f; padding: 10px 0;">
+							<center>Đùi gà Góc Tư</center>
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNavVer('detailSidenav')"><b>X</b></a>
+						</div>
+						<div style="border: 1px solid black;"></div>
+						<div class="row" style="height: 100%; margin: 0; color: black; overflow-y: auto; width: 100%;">
+							<div class="col-md-6" style="margin-top: 2%; height: 100%;">
+								<center><img src="gachitiet.jpg" style="width: 90%; height: 300px;"></center>
+								<center>
+									<div class="row" style="margin-top: 3%;">
+										<div class="col-md-4">
+											<img src="coverga.jpg" style="width: 90%; height: 100px;">
+										</div>
+										<div class="col-md-4">
+											<img src="coverga.jpg" style="width: 90%; height: 100px;">
+										</div>
+										<div class="col-md-4">
+											<img src="coverga.jpg" style="width: 90%; height: 100px;">
+										</div>
+									</div>
+								</center>
+								<div style="margin-top: 2%; margin-left: 2%;">
+								<h6>Thông tin:</h6>
+								<p>
+									 - Đùi gà được lấy từ lò mổ Phạm Tôn.
+								</p>
+								<div class="row" style="padding-bottom: 80px;">
+									<div class="col-md-3">
+										<center><h6>Bình luận:</h6></center>
+									</div>
+									<div class="col-md-9">
+										<textarea rows="4" cols="40"></textarea>
+										<br>
+										<button type="button" class="btn btn-primary" style="font-size: 12px; padding: 5px 10px">Đăng bình luận</button>
+										<br>
+										<br>
+										<h6 style="display: inline;">Nguyễn Văn A: &nbsp;&nbsp;&nbsp;</h6>
+										<span class="fa fa-star checkedStar"></span>
+										<span class="fa fa-star checkedStar"></span>
+										<span class="fa fa-star checkedStar"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<p>Đùi gà rất ngon.</p>
+									</div>
+								</div>									
+								</div>
+							</div>
+							<div class="col-md-6" style="margin-top: 2%; height: 100%;">
+								<h4>Đùi gà Góc Tư</h4>
+								<br>
+								<p>Ngày sản xuất: 01/08/2020</p>
+								<br>
+								<p>Nhà phân phối: Gà Phạm Tôn</p>
+								<br>
+								<p>Khối lượng: 300 gram</p>
+								<br>
+								<p>Giá: 15.000 VND</p>
+								<br>
+								<p>Đánh giá: </p>
+								<span class="fa fa-star checkedStar"></span>
+								<span class="fa fa-star checkedStar"></span>
+								<span class="fa fa-star checkedStar"></span>
+								<span class="fa fa-star checkedStar"></span>
+								<span class="fa fa-star"></span>
+								<br>
+								<br>
+								<center>
+									<button type="button" class="btn btn-primary" onclick="alert('asgs')">Thêm vào giỏ hàng</button>
+								</center>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="detailSidenav1" class="overlay-2">
+					<div class="overlay-content" style="height: 100%; width: 100%;">
+						<div style="width: 100%; font-size: 25px; background-color: #5f5f5f; padding: 10px 0;">
+							<center>Sườn cốt lết</center>
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNavVer('detailSidenav1')"><b>X</b></a>
+						</div>
+						<div style="border: 1px solid black;"></div>
+						<div class="row" style="height: 100%; margin: 0; color: black; overflow-y: auto; width: 100%;">
+							<div class="col-md-6" style="margin-top: 2%; height: 100%;">
+								<center><img src="heo.jpg" style="width: 90%; height: 300px;"></center>
+								<center>
+									<div class="row" style="margin-top: 3%;">
+										<div class="col-md-4">
+											<img src="coverheo.jpg" style="width: 90%; height: 100px;">
+										</div>
+										<div class="col-md-4">
+											<img src="coverheo.jpg" style="width: 90%; height: 100px;">
+										</div>
+										<div class="col-md-4">
+											<img src="coverheo.jpg" style="width: 90%; height: 100px;">
+										</div>
+									</div>
+								</center>
+								<div style="margin-top: 2%; margin-left: 2%;">
+								<h6>Thông tin:</h6>
+								<p>
+									 - Sườn heo được lấy từ lò mổ Phạm Tôn.
+								</p>
+								<div class="row" style="padding-bottom: 80px;">
+									<div class="col-md-3">
+										<center><h6>Bình luận:</h6></center>
+									</div>
+									<div class="col-md-9">
+										<textarea rows="4" cols="40"></textarea>
+										<br>
+										<button type="button" class="btn btn-primary" style="font-size: 12px; padding: 5px 10px">Đăng bình luận</button>
+										<br>
+										<br>
+										<h6 style="display: inline;">Nguyễn Văn A: &nbsp;&nbsp;&nbsp;</h6>
+										<span class="fa fa-star checkedStar"></span>
+										<span class="fa fa-star checkedStar"></span>
+										<span class="fa fa-star checkedStar"></span>
+										<span class="fa fa-star"></span>
+										<span class="fa fa-star"></span>
+										<p>Sườn heo rất ngon.</p>
+									</div>
+								</div>									
+								</div>
+							</div>
+							<div class="col-md-6" style="margin-top: 2%; height: 100%;">
+								<h4>Sườn cốt lết</h4>
+								<br>
+								<p>Ngày sản xuất: 01/08/2020</p>
+								<br>
+								<p>Nhà phân phối: Gà Phạm Tôn</p>
+								<br>
+								<p>Khối lượng: 300 gram</p>
+								<br>
+								<p>Giá: 60.000 VND</p>
+								<br>
+								<p>Đánh giá: </p>
+								<span class="fa fa-star checkedStar"></span>
+								<span class="fa fa-star checkedStar"></span>
+								<span class="fa fa-star checkedStar"></span>
+								<span class="fa fa-star checkedStar"></span>
+								<span class="fa fa-star"></span>
+								<br>
+								<br>
+								<center>
+									<button type="button" class="btn btn-primary">Thêm vào giỏ hàng</button>
+								</center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+			<div class="col-md-2"></div>
+		</div>
+		<div>
+			
+		</div>
+	</div>
+	
+
+	<script type="text/javascript">
+		function openNavHori(idClass) {
+			document.getElementById(idClass).style.width = "100%";
+		}
+
+		function closeNavHori(idClass) {
+			document.getElementById(idClass).style.width = "0";
+		}
+
+		function openNavVer(idClass) {
+			document.getElementById(idClass).style.height = "100%";
+		}
+
+		function closeNavVer(idClass) {
+			document.getElementById(idClass).style.height = "0";
+		}
+	</script>
+
+</body>
+</html>

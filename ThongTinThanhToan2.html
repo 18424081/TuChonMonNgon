@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thanh Toán</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="nucleo-icons.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark" style="display: flex; padding: 0;">
+		<button class="navbar-toggler homeButton" type="button" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;" onclick="location.href='home.html'">
+			<i class="fas fa-home"></i><b> Trang chủ</b>
+		</button>
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#HaiSan" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fa"></i><b> Hải Sản</b>
+		</button>
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#Thit" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fa" aria-hidden="true"></i><b> Thịt</b>
+		</button>
+
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#RauCu" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fa" aria-hidden="true"></i><b> Rau Củ</b>
+		</button>
+
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#TraiCay" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fa" aria-hidden="true"></i><b> Trái Cây</b>
+		</button>
+
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#GiaVi" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fa" aria-hidden="true"></i><b> Gia Vị</b>
+		</button>
+
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#User" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fas fa-user" aria-hidden="true"></i><b> Người Dùng</b>
+		</button>
+
+		<button class="navbar-toggler tablink collapsed" type="button" data-toggle="collapse" data-target="#Cast" style="border: none; outline: none; flex-grow: 1; border-radius: 0; padding: 15px;">
+			<i class="fas fa-shopping-basket" aria-hidden="true" onclick="location.href='giohang.html'"></i><b onclick="location.href='giohang2.html'"> Giỏ Hàng</b>
+		</button>
+	</nav>
+	<div id="ThucPham">
+		<div class="collapse navbar-collapse"  id="HaiSan" data-parent="#ThucPham">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse bg-success" id="Thit" data-parent="#ThucPham">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="homeHeo.jpg">Thịt Heo</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="homeGa.html">Thịt Gà</a>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse bg-success" id="RauCu" data-parent="#ThucPham">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse bg-success" id="TraiCay" data-parent="#ThucPham">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse bg-success" id="GiaVi" data-parent="#ThucPham">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container-fluid" style="margin-top: 5%; height: 100%;">
+		<div class="row" style="height: 100%;">
+			<div class="col-md-2"></div>
+			<div class="col-md-5">
+				<table style="border: 1px solid black; width: 100%;">
+					<tr>
+						<td colspan="2">
+							<input type="checkbox"><span> Dùng sổ địa chỉ</span>
+							<br>
+							<select disabled="true">
+								<option>Sổ địa chỉ</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="text" placeholder="Họ tên" style="width: 95%;"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="text" placeholder="Số điện thoại" style="width: 95%;"></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<select style="width: 95%;">
+								<option value="" disabled selected>Tỉnh/Thành phố</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<select style="width: 95%;">
+								<option value="" disabled selected>Quận/Huyện</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<select style="width: 95%;">
+								<option value="" disabled selected>Xã/Phường</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<h6>Địa chỉ:</h6>
+							<textarea rows="4" cols="70"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>Loại địa chỉ</td>
+						<td>
+							<input type="radio" checked="true"> Nhà riêng/chung cư
+							<br>
+							<input type="radio"> Cơ quan/công ty
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="checkbox"> Lưu lại địa chỉ này</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-5">
+				<div style="border: 1px solid black; width: 80%; margin-left: 5%;">
+					<center style="color: blue; margin-top: 2%;"><b>Hình thức thanh toán</b></center>
+					<br>
+					<br>
+					<div style="margin-left: 5%; padding-bottom: 5%;">
+						<p style="display: inline;">Số tiền phải trả: </p><span style="color: blue; font-size: 20px;"><b>&nbsp;135.000 VND</b></span>
+						<br>
+						<br>
+						<input type="radio" checked="true"> Thanh toán bằng tiền mặt khi nhận hàng
+						<br>
+						<input type="radio"> Thanh toán trực tuyến qua thẻ VISA/MASTER CARD
+						<br>
+						<br>
+						<center><button type="button" class="btn btn-primary">Thanh toán</button></center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
